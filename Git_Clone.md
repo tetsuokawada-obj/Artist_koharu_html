@@ -23,6 +23,7 @@ git commit -m "変更内容"
 git push
 
 9. git接続テスト
+10. 2台目PCからプッシュテスト
 
 
 
