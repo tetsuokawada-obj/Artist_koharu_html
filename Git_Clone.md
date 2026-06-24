@@ -12,18 +12,20 @@ git add .　保存対象にするよ
 git commit -m "初めてのコミット"
 
 7. 全体流れ
-① ファイル作成・編集↓
-② git add（準備）↓
-③ git commit（保存）↓
-④ git push（GitHubに送る）
+ファイル作成・編集↓
+git status（変更内容確認）↓
+git pull --rebase（GitHubの最新状態を取得）↓
+git add .（準備）↓
+git commit -m "メッセージ"（保存）↓
+git push（GitHubに送る）
 
 8. 毎度操作のテンプレ
+git status
+git pull --rebase
 git add .
-git commit -m "変更内容"
+git commit -m "〇〇更新"
 git push
 
-9. git接続テスト
-10. 2台目PCからプッシュテスト
 
 
 
