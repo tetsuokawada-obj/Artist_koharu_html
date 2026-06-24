@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>絵師のホームページ</title>
+  <meta name="description" content="旧来の個人サイトの雰囲気を残した、軽くて速い絵師のホームページです。">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <p class="site-kicker">Illustrator Home Page</p>
+      <h1>絵師のホームページ</h1>
+      <p class="site-lead">作品、更新情報、連絡先をひと目で見られる、読み込みの速いシンプルな個人サイト。</p>
+    </header>
+
+    <main class="page-layout">
+      <div class="sidebar-column">
+        <section class="links-section">
+          <div class="section-heading">
+            <p class="eyebrow">Links</p>
+            <h2>メニュー</h2>
+          </div>
+          <nav class="nav-list" aria-label="サイト内メニュー">
+            <a href="#top">トップ</a>
+            <a href="#works">作品集</a>
+            <a href="#news">お知らせ</a>
+            <a href="#contact">連絡先</a>
+          </nav>
+        </section>
+      </div>
+
+      <div class="content-column">
+        <section id="top" class="page-panel is-active" data-panel="top" aria-labelledby="top-title">
+          <div class="hero">
+            <div class="portrait" aria-hidden="true">
+              <span>ART</span>
+            </div>
+            <div class="hero-copy">
+              <p class="eyebrow">最新の更新</p>
+              <h2 id="top-title">2026年の新作を公開しました</h2>
+              <p>透明感のある人物画と、和モダン寄りの背景表現を中心に制作しています。展示、依頼制作、装画などのお問い合わせも受け付けています。</p>
+              <div class="hero-links">
+                <a href="#works" data-panel-link="works">作品を見る</a>
+                <a href="#contact" data-panel-link="contact">連絡する</a>
+              </div>
+            </div>
+          </div>
+
+          <section class="info-grid" aria-label="基本情報">
+            <article>
+              <h3>プロフィール</h3>
+              <p>絵師 / イラストレーター</p>
+              <p>得意分野: キャラクター、背景込み一枚絵、装画</p>
+            </article>
+            <article>
+              <h3>制作環境</h3>
+              <p>CLIP STUDIO PAINT / Photoshop / Blender</p>
+              <p>静かな色設計と、余白のある構図を好みます。</p>
+            </article>
+            <article>
+              <h3>更新履歴</h3>
+              <ul class="history-list">
+                <li>2026.06.23　ホームページ公開</li>
+                <li>2026.06.20　新作3点を追加</li>
+                <li>2026.06.10　展示情報を更新</li>
+              </ul>
+            </article>
+          </section>
+        </section>
+
+        <section id="works" class="page-panel works-section" data-panel="works" aria-labelledby="works-title" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">Gallery</p>
+            <h2 id="works-title">作品集</h2>
+          </div>
+          <div class="work-grid">
+            <button class="work-card" data-panel-link="work-1" type="button">
+              <div class="work-thumb thumb-a" aria-hidden="true"></div>
+              <h3>青の灯り</h3>
+              <p>夜の街と人物の対比をテーマにした一枚絵。</p>
+            </button>
+            <button class="work-card" data-panel-link="work-2" type="button">
+              <div class="work-thumb thumb-b" aria-hidden="true"></div>
+              <h3>花影</h3>
+              <p>和のモチーフを使った静かなポートレート。</p>
+            </button>
+            <button class="work-card" data-panel-link="work-3" type="button">
+              <div class="work-thumb thumb-c" aria-hidden="true"></div>
+              <h3>白昼の庭</h3>
+              <p>日差しの強さと緑の階調を意識した背景画。</p>
+            </button>
+          </div>
+        </section>
+
+        <section id="work-1" class="page-panel work-detail-section" data-panel="work-1" aria-labelledby="work-1-title" hidden>
+          <div class="work-detail-header">
+            <button class="back-button" data-panel-link="works" type="button">← 作品集に戻る</button>
+          </div>
+          <div class="work-detail-content">
+            <div class="work-detail-image">
+              <div class="work-detail-thumb thumb-a" aria-hidden="true"></div>
+            </div>
+            <div class="work-detail-info">
+              <h2 id="work-1-title">青の灯り</h2>
+              <p class="work-date">2026年6月</p>
+              <p class="work-description">夜の街と人物の対比をテーマにした一枚絵。透明感のある人物の肌と、冷たい夜間照明の色彩設計が特徴です。</p>
+              <p class="work-tags"><span class="tag">人物</span><span class="tag">風景</span><span class="tag">夜景</span></p>
+            </div>
+          </div>
+        </section>
+
+        <section id="work-2" class="page-panel work-detail-section" data-panel="work-2" aria-labelledby="work-2-title" hidden>
+          <div class="work-detail-header">
+            <button class="back-button" data-panel-link="works" type="button">← 作品集に戻る</button>
+          </div>
+          <div class="work-detail-content">
+            <div class="work-detail-image">
+              <div class="work-detail-thumb thumb-b" aria-hidden="true"></div>
+            </div>
+            <div class="work-detail-info">
+              <h2 id="work-2-title">花影</h2>
+              <p class="work-date">2026年5月</p>
+              <p class="work-description">和のモチーフを使った静かなポートレート。季節の花と人物の関係性を、控えめな色彩で表現しました。</p>
+              <p class="work-tags"><span class="tag">人物</span><span class="tag">花</span><span class="tag">和風</span></p>
+            </div>
+          </div>
+        </section>
+
+        <section id="work-3" class="page-panel work-detail-section" data-panel="work-3" aria-labelledby="work-3-title" hidden>
+          <div class="work-detail-header">
+            <button class="back-button" data-panel-link="works" type="button">← 作品集に戻る</button>
+          </div>
+          <div class="work-detail-content">
+            <div class="work-detail-image">
+              <div class="work-detail-thumb thumb-c" aria-hidden="true"></div>
+            </div>
+            <div class="work-detail-info">
+              <h2 id="work-3-title">白昼の庭</h2>
+              <p class="work-date">2026年4月</p>
+              <p class="work-description">日差しの強さと緑の階調を意識した背景画。静かな庭の時間を、光と影で表現します。</p>
+              <p class="work-tags"><span class="tag">風景</span><span class="tag">背景</span><span class="tag">自然</span></p>
+            </div>
+          </div>
+        </section>
+
+        <section id="news" class="page-panel news-section" data-panel="news" aria-labelledby="news-title" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">News</p>
+            <h2 id="news-title">お知らせ</h2>
+          </div>
+          <ul class="news-list">
+            <li><span class="date">2026.07</span><span>個展の準備中です。</span></li>
+            <li><span class="date">2026.08</span><span>コミッション受付を再開予定です。</span></li>
+            <li><span class="date">2026.09</span><span>同人誌の新刊を公開予定です。</span></li>
+          </ul>
+        </section>
+
+        <section id="contact" class="page-panel contact-section" data-panel="contact" aria-labelledby="contact-title" hidden>
+          <div class="section-heading">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">連絡先</h2>
+          </div>
+          <p>お仕事のご相談は、下記メールアドレスまでお願いします。</p>
+          <p class="contact-mail"><a href="mailto:info@example.com">info@example.com</a></p>
+          <p class="small-note">※ サンプルのためダミーアドレスを入れています。</p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 絵師のホームページ</p>
+      <p class="footer-note">軽量表示を優先して、外部スクリプトや重い画像は使っていません。</p>
+    </footer>
+  </div>
+  <script>
+    (() => {
+      const links = Array.from(document.querySelectorAll('[data-panel-link]'));
+      const panels = Array.from(document.querySelectorAll('[data-panel]'));
+      const navLinks = Array.from(document.querySelectorAll('.nav-list a'));
+
+      const showPanel = (panelName) => {
+        panels.forEach((panel) => {
+          const isActive = panel.dataset.panel === panelName;
+          panel.hidden = !isActive;
+          panel.classList.toggle('is-active', isActive);
+        });
+
+        navLinks.forEach((link) => {
+          const isActive = link.getAttribute('href') === `#${panelName}`;
+          link.setAttribute('aria-current', isActive ? 'page' : 'false');
+        });
+
+        window.scrollTo(0, 0);
+      };
+
+      const initialPanel = (location.hash || '#top').slice(1);
+      showPanel(panels.some((panel) => panel.dataset.panel === initialPanel) ? initialPanel : 'top');
+
+      links.forEach((link) => {
+        link.addEventListener('click', (event) => {
+          const targetPanel = link.getAttribute('data-panel-link');
+          if (!targetPanel) {
+            return;
+          }
+
+          event.preventDefault();
+          history.pushState(null, '', `#${targetPanel}`);
+          showPanel(targetPanel);
+        });
+      });
+
+      window.addEventListener('hashchange', () => {
+        const nextPanel = (location.hash || '#top').slice(1);
+        showPanel(panels.some((panel) => panel.dataset.panel === nextPanel) ? nextPanel : 'top');
+      });
+    })();
+  </script>
+</body>
+</html>
